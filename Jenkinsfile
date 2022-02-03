@@ -9,7 +9,7 @@ pipeline{
     stage("c-control"){
       steps{
         sh "clang-format --dry-run --Werror /home/gcc-format/fibo-true.c"
-        sh "clang-format --dry-run --Werror /home/gcc-format/fibo-false.c"
+        echo "$?"
       }
     }
   }
