@@ -2,7 +2,7 @@ pipeline{
   agent{
     docker{
       image "gcc-format"
-      argc "-v /home/talha/docker/gcc-format/:/home/gcc-format/"
+      args "-v /home/talha/docker/gcc-format/:/home/gcc-format/"
     }
   }
   stages{
